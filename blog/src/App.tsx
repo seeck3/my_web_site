@@ -9,7 +9,7 @@ import Container from './Components/Layout/Container';
 // Type Def
 
 function App() {
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(1);
   return (
     <React.Fragment>
       <Header value={value} setValue={setValue} />

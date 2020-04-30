@@ -58,7 +58,7 @@ const Header = ({ value, setValue }: HeaderProps) => {
             }
             {...a11yProps(0)}
           />
-          <Tab label='Item Two' {...a11yProps(1)} />
+          <Tab label='Resume' {...a11yProps(1)} />
           <Tab label='Item Three' {...a11yProps(2)} />
           <Tab label='GitHub' {...a11yProps(3)} />
         </Tabs>
