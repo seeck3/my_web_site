@@ -23,3 +23,23 @@ export type GitHubProps = {
   watchers_count: number;
   forks_count: number;
 };
+
+export type Educations = {
+  school: Education;
+};
+export type Education = {
+  name: string;
+  description: string;
+  startAt: string | null;
+  endAt: string | null;
+};
+
+export type WorkExperiences = {
+  company: Experience;
+};
+export type Experience = {
+  name: string;
+  experience: string[];
+  startAt: string;
+  endAt: string;
+};

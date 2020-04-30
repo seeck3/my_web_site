@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import { Provider } from 'react-redux';
+import store from './store';
 import './App.css';
 
 // Components
@@ -11,10 +12,12 @@ import Container from './Components/Layout/Container';
 function App() {
   const [value, setValue] = useState(1);
   return (
-    <React.Fragment>
-      <Header value={value} setValue={setValue} />
-      <Container value={value} />
-    </React.Fragment>
+    <Provider store={store}>
+      <React.Fragment>
+        <Header value={value} setValue={setValue} />
+        <Container value={value} />
+      </React.Fragment>
+    </Provider>
   );
 }
 
